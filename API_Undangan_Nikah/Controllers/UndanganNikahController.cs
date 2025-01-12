@@ -19,17 +19,22 @@ namespace API_Undangan_Nikah.Controllers
         [HttpPost]
         public async Task<IActionResult> AddUcapan([FromBody] Dictionary<string, object> data)
         {
-            if (data == null || !data.ContainsKey("ucapan") || !data.ContainsKey("konfirmasi_kehadiran"))
+            if (data == null || !data.ContainsKey("ucapan") || !data.ContainsKey("konfirmasi_kehadiran") || !data.ContainsKey("nama"))
             {
-                return BadRequest("Ucapan dan Konfirmasi Kehadiran wajib ada!");
+                return BadRequest("Nama, Ucapan, dan Konfirmasi Kehadiran wajib ada!");
             }
 
             try
             {
+                string nama = data["nama"].ToString();
                 string ucapan = data["ucapan"].ToString();
                 string konfirmasiKehadiran = data["konfirmasi_kehadiran"].ToString();
 
                 // Validasi
+                if (string.IsNullOrWhiteSpace(nama))
+                {
+                    return BadRequest("Nama tidak boleh kosong!");
+                }
                 if (string.IsNullOrWhiteSpace(ucapan))
                 {
                     return BadRequest("Ucapan tidak boleh kosong!");
@@ -51,7 +56,7 @@ namespace API_Undangan_Nikah.Controllers
                 }
 
                 var query = @"
-                    INSERT INTO ucapan (Ucapan, Konfirmasi_Kehadiran, Addtime) VALUES (@ucapan, @konfirmasi_kehadiran, NOW());
+                    INSERT INTO ucapan (Nama, Ucapan, Konfirmasi_Kehadiran, Addtime) VALUES (@nama, @ucapan, @konfirmasi_kehadiran, NOW());
                 ";
 
                 using (var con = new MySqlConnection(configuration.GetConnectionString("DefaultConnection")))
@@ -60,6 +65,7 @@ namespace API_Undangan_Nikah.Controllers
 
                     using (var cmd = new MySqlCommand(query, con))
                     {
+                        cmd.Parameters.AddWithValue("@nama", nama);
                         cmd.Parameters.AddWithValue("@ucapan", ucapan);
                         cmd.Parameters.AddWithValue("@konfirmasi_kehadiran", konfirmasiKehadiran);
 
@@ -67,7 +73,7 @@ namespace API_Undangan_Nikah.Controllers
                     }
                 }
 
-                return Ok("Ucapan dan konfirmasi kehadiran berhasil ditambahkan.");
+                return Ok("Data berhasil ditambahkan.");
             }
             catch (Exception ex)
             {
@@ -96,12 +102,16 @@ namespace API_Undangan_Nikah.Controllers
                         {
                             while (await reader.ReadAsync())
                             {
+                                var IdDb = reader.IsDBNull(reader.GetOrdinal("Id")) ? 0 : reader.GetInt32("Id");
+                                var namaDb = reader.IsDBNull(reader.GetOrdinal("Nama")) ? string.Empty : reader.GetString("Nama");
                                 var ucapanDb = reader.IsDBNull(reader.GetOrdinal("Ucapan")) ? string.Empty : reader.GetString("Ucapan");
                                 var konfirmasiKehadiranDb = reader.IsDBNull(reader.GetOrdinal("Konfirmasi_Kehadiran")) ? string.Empty : reader.GetString("Konfirmasi_Kehadiran");
                                 var addtimeDb = reader.IsDBNull(reader.GetOrdinal("addtime")) ? DateTime.MinValue : reader.GetDateTime("addtime");
 
                                 var ucapan = new Dictionary<string, object>
                                 {
+                                    { "Id", IdDb },
+                                    { "Nama", namaDb },
                                     { "Ucapan", ucapanDb },
                                     { "Konfirmasi_Kehadiran", konfirmasiKehadiranDb },
                                     { "Addtime", addtimeDb }
