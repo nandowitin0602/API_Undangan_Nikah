@@ -1,0 +1,6 @@
+@API_Undangan_Nikah_HostAddress = http://localhost:5215
+
+GET {{API_Undangan_Nikah_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

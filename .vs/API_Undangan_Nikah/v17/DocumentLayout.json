@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|d:\\ikodora\\projek nikah\\nikah 1\\api_undangan_nikah\\api_undangan_nikah\\controllers\\undangannikahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|solutionrelative:api_undangan_nikah\\controllers\\undangannikahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|d:\\ikodora\\projek nikah\\nikah 1\\api_undangan_nikah\\api_undangan_nikah\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|solutionrelative:api_undangan_nikah\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|d:\\ikodora\\projek nikah\\nikah 1\\api_undangan_nikah\\api_undangan_nikah\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|solutionrelative:api_undangan_nikah\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|d:\\ikodora\\projek nikah\\nikah 1\\api_undangan_nikah\\api_undangan_nikah\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEFB8457-ABAA-45A5-9E0A-34EC750B15C4}|API_Undangan_Nikah\\API_Undangan_Nikah.csproj|solutionrelative:api_undangan_nikah\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UndanganNikahController.cs",
+              "DocumentMoniker": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\Controllers\\UndanganNikahController.cs",
+              "RelativeDocumentMoniker": "API_Undangan_Nikah\\Controllers\\UndanganNikahController.cs",
+              "ToolTip": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\Controllers\\UndanganNikahController.cs",
+              "RelativeToolTip": "API_Undangan_Nikah\\Controllers\\UndanganNikahController.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAswFkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T12:58:08.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\appsettings.json",
+              "RelativeDocumentMoniker": "API_Undangan_Nikah\\appsettings.json",
+              "ToolTip": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\appsettings.json",
+              "RelativeToolTip": "API_Undangan_Nikah\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-12T15:13:57.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "API_Undangan_Nikah\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "API_Undangan_Nikah\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T13:24:35.074Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\Program.cs",
+              "RelativeDocumentMoniker": "API_Undangan_Nikah\\Program.cs",
+              "ToolTip": "D:\\Ikodora\\Projek Nikah\\Nikah 1\\API_Undangan_Nikah\\API_Undangan_Nikah\\Program.cs",
+              "RelativeToolTip": "API_Undangan_Nikah\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T12:14:28.227Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
