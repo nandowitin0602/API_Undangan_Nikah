@@ -44,16 +44,16 @@ namespace API_Undangan_Nikah.Controllers
                     return BadRequest("Konfirmasi Kehadiran tidak boleh kosong!");
                 }
 
-                string pattern = @"^[a-zA-Z.,\s]+$";
-                Regex regex = new Regex(pattern);
-                if (!regex.IsMatch(ucapan))
-                {
-                    return BadRequest("Ucapan hanya boleh berisi huruf, titik, koma, dan spasi.");
-                }
-                if (!regex.IsMatch(konfirmasiKehadiran))
-                {
-                    return BadRequest("Konfirmasi Kehadiran hanya boleh berisi huruf, titik, koma, dan spasi.");
-                }
+                //string pattern = @"^[a-zA-Z.,\s]+$";
+                //Regex regex = new Regex(pattern);
+                //if (!regex.IsMatch(ucapan))
+                //{
+                //    return BadRequest("Ucapan hanya boleh berisi huruf, titik, koma, dan spasi.");
+                //}
+                //if (!regex.IsMatch(konfirmasiKehadiran))
+                //{
+                //    return BadRequest("Konfirmasi Kehadiran hanya boleh berisi huruf, titik, koma, dan spasi.");
+                //}
 
                 var query = @"
                     INSERT INTO ucapan (Nama, Ucapan, Konfirmasi_Kehadiran, Addtime) VALUES (@nama, @ucapan, @konfirmasi_kehadiran, NOW());
