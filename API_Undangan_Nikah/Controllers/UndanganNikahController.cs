@@ -89,7 +89,7 @@ namespace API_Undangan_Nikah.Controllers
                 var ucapanList = new List<Dictionary<string, object>>();
 
                 var query = @"
-                    SELECT * FROM ucapan;
+                    SELECT * FROM ucapan ORDER BY Addtime DESC;
                 ";
 
                 using (var con = new MySqlConnection(configuration.GetConnectionString("DefaultConnection")))
